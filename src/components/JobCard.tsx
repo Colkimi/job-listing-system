@@ -5,7 +5,7 @@ interface JobCardProps {
 }
 
 const JobCard: React.FC<JobCardProps> = ({ job }) => {
-    const logoPath = `/static-job-listings-master${job.logo.slice(1)}`;
+    const logoPath = `./static-job-listings-master${job.logo.slice(1)}`;
     return (
         <div
             className={`flex flex-row w-full bg-white rounded-lg shadow-md p-6 ${
