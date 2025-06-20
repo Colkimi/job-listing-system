@@ -16,7 +16,7 @@ export interface Job {
     languages: string[];
     tools: string[];
 }
-
+// Sample job data
 const JobListing: React.FC<{ job: Job }> = ({ job }) => {
     return (
         <div className={`job-listing${job.featured ? ' featured' : ''}`}>
