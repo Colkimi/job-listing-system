@@ -69,7 +69,7 @@
 
 @media (max-width: 700px) {
   .header-img {
-    content: url('/public/images/bg-header-mobile.svg');
+    content: url('/images/bg-header-mobile.svg');
     height: 120px;
   }
 
