@@ -1,3 +1,3 @@
-import data from '../../static-job-listings-master/data.json';
+import data from './Data.json';
 
 export default data;
