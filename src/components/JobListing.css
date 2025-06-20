@@ -1,0 +1,132 @@
+.job-listing {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+    padding: 24px;
+    margin-bottom: 24px;
+    border-left: 5px solid transparent;
+    transition: box-shadow 0.2s;
+    position: relative;
+}
+
+.job-listing.featured {
+    border-left: 5px solid #5ba4a4;
+    box-shadow: 0 4px 16px rgba(91, 164, 164, 0.15);
+}
+
+.company-logo {
+    width: 60px;
+    height: 60px;
+    margin-right: 24px;
+    border-radius: 50%;
+    background: #f0fafb;
+    object-fit: contain;
+}
+
+.job-info {
+    flex: 1;
+}
+
+.job-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+.company {
+    color: #5ba4a4;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.new {
+    background: #5ba4a4;
+    color: #fff;
+    border-radius: 12px;
+    padding: 4px 8px;
+    font-size: 0.8em;
+    margin-left: 8px;
+    text-transform: uppercase;
+}
+
+.featured-badge {
+    background: #2b3939;
+    color: #fff;
+    border-radius: 12px;
+    padding: 4px 8px;
+    font-size: 0.8em;
+    margin-left: 8px;
+    text-transform: uppercase;
+}
+
+.position {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #2b3939;
+}
+
+.job-meta {
+    color: #7b8e8e;
+    font-size: 0.95em;
+    display: flex;
+    gap: 8px;
+}
+
+.job-tags {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.job-tags.right {
+    margin-left: auto;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    min-width: 250px;
+}
+
+.tag {
+    background: #eef6f6;
+    color: #5ba4a4;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 0.95em;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.tag:hover {
+    background: #5ba4a4;
+    color: #fff;
+}
+
+@media (max-width: 700px) {
+    .job-listing {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 16px;
+    }
+
+    .company-logo {
+        margin-bottom: 12px;
+    }
+
+    .job-tags {
+        margin-top: 12px;
+    }
+
+    .job-tags.right {
+        margin-left: 0;
+        margin-top: 12px;
+        justify-content: flex-start;
+        min-width: unset;
+    }
+}

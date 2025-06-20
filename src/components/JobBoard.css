@@ -1,0 +1,7 @@
+.job-board {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+}

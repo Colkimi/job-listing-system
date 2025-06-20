@@ -1,8 +1,14 @@
-import JobList from './components/Jobs';
+import JobBoard from './components/JobBoard';
+import './App.css';
 
 function App() {
   return (
-    <JobList />
+    <div className="App">
+      <header className="header">
+        <img src="/public/images/bg-header-desktop.svg" alt="Header" className="header-img" />
+      </header>
+      <JobBoard />
+    </div>
   );
 }
 
